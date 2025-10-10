@@ -10,10 +10,10 @@ public final class InMemoryOrderRepository implements OrderRepository {
     @Override
     public boolean save(Order order) {
         // GUARDS
-        if (/* TODO: order ? */) {
+        if (order == null) {
             throw new IllegalArgumentException("order must not be null");
         }
-        if (/* TODO: order.id ? */) {
+        if (order.id == null) {
             throw new IllegalArgumentException("order.id must not be null or blank");
         }
 
@@ -25,7 +25,7 @@ public final class InMemoryOrderRepository implements OrderRepository {
     @Override
     public Order getByIdOrThrow(String id) {
         // GUARDS
-        if (/* TODO: id ? */) {
+        if (id == null) {
             throw new IllegalArgumentException("id must not be null or blank");
         }
 
@@ -37,7 +37,7 @@ public final class InMemoryOrderRepository implements OrderRepository {
     @Override
     public boolean deleteById(String id) {
         // GUARDS
-        if (/* TODO: order.id ? */) {
+        if (id == null) {
             throw new IllegalArgumentException("id must not be null or blank");
         }
 
