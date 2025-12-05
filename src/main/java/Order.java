@@ -7,7 +7,7 @@
  * - id darf nicht null/leer sein.
  * - totalInCents >= 0 (kein negativer Betrag).
  */
-final class Order {
+public final class Order {
     final String id;
     final int totalInCents;
 

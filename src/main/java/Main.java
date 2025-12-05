@@ -1,9 +1,6 @@
 public class Main {
     public static void main(String[] args) {
         OrderRepository repo = new InMemoryOrderRepository(); // Hier Polymorphie angelegt, weil wir nur den Vertrag (Interface) kennen – nicht die Klasse. --> Dependency Inversion light™ – weil wir Verträge lieben, nicht Implementierungen
-// Kommentar
-
-
 
         // 🟢 Happy Path: Bestellung anlegen und abrufen
         System.out.println("== Happy Path ==");
